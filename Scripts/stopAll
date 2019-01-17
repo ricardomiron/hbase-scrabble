@@ -1,0 +1,7 @@
+screen -r hbase-rs3 -X quit
+screen -r hbase-rs2 -X quit
+screen -r hbase-rs1 -X quit
+screen -r hbase-master -X quit
+./zookeeper-3.4.5-cdh5.3.5/bin/zkServer.sh stop
+./hadoop-2.5.0-cdh5.3.5/sbin/hadoop-daemon.sh stop datanode
+./hadoop-2.5.0-cdh5.3.5/sbin/hadoop-daemon.sh stop namenode
